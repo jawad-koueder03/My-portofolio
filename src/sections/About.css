@@ -1,0 +1,225 @@
+/* ============================================
+   About Section
+   ============================================ */
+
+.about {
+  position: relative;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+/* ============================================
+   Left — Image
+   ============================================ */
+
+.about__image-wrapper {
+  position: relative;
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+
+.about__image-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background-color: var(--color-bg-subtle);
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.1),
+    0 8px 16px rgba(15, 23, 42, 0.06);
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Floating Card ===== */
+
+.about__float-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.1),
+    0 4px 8px rgba(15, 23, 42, 0.06);
+}
+
+.about__float-line {
+  display: block;
+  width: 3px;
+  height: 42px;
+  background: var(--color-gradient);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.about__float-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about__float-text span {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+/* ============================================
+   Right — Content
+   ============================================ */
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.about__paragraph {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.about__highlight {
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+}
+
+/* ============================================
+   Features (3 Points)
+   ============================================ */
+
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+}
+
+.about__feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about__feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.about__feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.about__feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about__feature-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.about__feature-description {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .about__image-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+
+  .about__features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about__image-wrapper {
+    max-width: 100%;
+  }
+
+  .about__image {
+    aspect-ratio: 1 / 1;
+  }
+
+  .about__float-card {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .about__float-line {
+    height: 36px;
+  }
+
+  .about__float-text span {
+    font-size: var(--text-xs);
+  }
+
+  .about__paragraph {
+    font-size: var(--text-md);
+  }
+
+  .about__features {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding-top: var(--space-6);
+  }
+
+  .about__feature {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .about__feature-icon {
+    flex-shrink: 0;
+  }
+}

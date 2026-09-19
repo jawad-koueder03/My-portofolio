@@ -1,0 +1,33 @@
+/* ============================================
+   Approach Section — What I Do
+   ============================================ */
+
+.approach {
+  position: relative;
+}
+
+.approach__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+/* Tablet — 2 columns */
+@media (max-width: 1024px) {
+  .approach__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+/* Mobile — 1 column */
+@media (max-width: 640px) {
+  .approach__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}

@@ -1,0 +1,161 @@
+/* ============================================
+   SectionTitle
+   ============================================ */
+
+.section-title {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+/* ============================================
+   Layouts
+   ============================================ */
+
+/* ===== inline — Side by side ===== */
+.section-title--layout-inline {
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 32px;
+}
+
+.section-title--layout-inline .section-title__subtitle {
+  max-width: 340px;
+  text-align: right;
+  padding-bottom: 6px;
+}
+
+/* ===== stacked — فوق بعضه ===== */
+.section-title--layout-stacked {
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+
+.section-title--layout-stacked .section-title__subtitle {
+  max-width: 560px;
+  text-align: left;
+}
+
+/* ============================================
+   Alignments
+   ============================================ */
+
+.section-title--align-center {
+  text-align: center;
+}
+
+.section-title--align-center .section-title__main {
+  align-items: center;
+}
+
+.section-title--align-center .section-title__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ============================================
+   Main (Label + Title)
+   ============================================ */
+
+.section-title__main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0; /* مهم للـ grid */
+}
+
+/* ===== Label ===== */
+
+.section-title__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6366f1;
+  line-height: 1;
+}
+
+.section-title__label-line {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #6366f1;
+  border-radius: 2px;
+}
+
+/* ===== Title ===== */
+
+.section-title__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* ============================================
+   Subtitle
+   ============================================ */
+
+.section-title__subtitle {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .section-title {
+    margin-bottom: 36px;
+  }
+
+  .section-title--layout-inline {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-title--layout-inline .section-title__subtitle {
+    max-width: 100%;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .section-title__title {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .section-title {
+    margin-bottom: 28px;
+    gap: 12px;
+  }
+
+  .section-title__title {
+    font-size: 25px;
+  }
+
+  .section-title__subtitle {
+    font-size: 14px;
+  }
+
+  .section-title__label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .section-title__label-line {
+    width: 20px;
+  }
+}

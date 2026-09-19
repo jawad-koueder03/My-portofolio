@@ -1,0 +1,17 @@
+.skill-badge__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #6366f1;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* دعم Simple Icons */
+.skill-badge__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+ fill: currentColor;  /* ← مهم: يجعل الأيقونة تتلون بلون CSS */
+}
