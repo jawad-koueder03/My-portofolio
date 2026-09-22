@@ -1,6 +1,7 @@
 import "./About.css";
 import SectionTitle from "../components/SectionTitle";
 import workspaceImage from "../assets/images/pexels-mikhail-nilov-9300738.jpg";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 import { personal } from "../data/personal";
 
 // ===== 3 Feature Points =====
@@ -59,6 +60,10 @@ const features = [
 ];
 
 function About() {
+  const [imageRef, imageVisible] = useScrollReveal();
+  const [contentRef, contentVisible] = useScrollReveal({
+    threshold: 0.1,
+  });
   return (
     <section id="about" className="about section">
       <div className="container">
@@ -71,6 +76,12 @@ function About() {
         {/* ===== Content Grid ===== */}
         <div className="about__grid">
           {/* ===== Left: Image ===== */}
+           <div
+            ref={imageRef}
+            className={`about__image-wrapper reveal reveal--left ${
+              imageVisible ? "reveal--visible" : ""
+            }`}
+          >
           <div className="about__image-wrapper">
             <div className="about__image-frame">
               <img
@@ -79,6 +90,7 @@ function About() {
                 className="about__image"
                 loading="lazy"
               />
+            </div>
             </div>
 
             {/* Floating Card */}
@@ -93,6 +105,12 @@ function About() {
           </div>
 
           {/* ===== Right: Content ===== */}
+          <div
+            ref={contentRef}
+            className={`about__content reveal reveal--right ${
+              contentVisible ? "reveal--visible" : ""
+            }`}
+          >
           <div className="about__content">
             <p className="about__paragraph">
               I'm a{" "}
@@ -131,6 +149,7 @@ function About() {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </div>
