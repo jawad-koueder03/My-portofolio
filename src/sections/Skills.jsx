@@ -2,8 +2,14 @@ import "./Skills.css";
 import SectionTitle from "../components/SectionTitle";
 import SkillBadge from "../components/SkillBadge";
 import { skillsData } from "../data/skills";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 function Skills() {
+  const [gridRef, gridVisible] = useScrollReveal({
+    threshold: 0.1,
+  });
+  
+
   return (
     <section id="skills" className="skills section">
       <div className="container">
@@ -15,9 +21,14 @@ function Skills() {
         />
 
         {/* ===== Groups Grid ===== */}
-        <div className="skills__grid">
-          {Object.entries(skillsData).map(([key, group]) => (
-            <div key={key} className="skills__group">
+        <div ref={gridRef} className="skills__grid">
+          {Object.entries(skillsData).map(([key, group], index) => (
+            <div
+              key={key}
+              className={`skills__group reveal reveal--up reveal--delay-${
+                index + 1
+              } ${gridVisible ? "reveal--visible" : ""}`}
+            >
               {/* ===== Group Header ===== */}
               <div className="skills__group-header">
                 <h3 className="skills__group-title">{group.title}</h3>
