@@ -10,10 +10,12 @@ import {
   SiGit,
   SiGithub,
   SiPostman,
+  SiNextdotjs,
+  SiTailwindcss,
   SiNodedotjs,
-  SiServerless,
   SiJsonwebtokens,
-  SiMongodb,
+  SiPostgresql,
+  SiVite
 } from "@icons-pack/react-simple-icons";
 
 export const skillsData = {
@@ -26,6 +28,8 @@ export const skillsData = {
       { name: "CSS", icon: SiCss },
       { name: "JavaScript", icon: SiJavascript },
       { name: "React", icon: SiReact },
+      {name : "Vite", icon: SiVite},
+      {name:"Tailwind CSS", icon: SiTailwindcss}
     ],
   },
 
@@ -48,10 +52,11 @@ export const skillsData = {
     badgeVariant: "warning",
     skills: [
       { name: "Node.js", icon: SiNodedotjs },
-      { name: "Backend Development", icon: SiServerless },
+      { name: "Backend Development", icon: SiNodedotjs },
       { name: "REST APIs", icon: SiPostman },
       { name: "Authentication", icon: SiJsonwebtokens },
-      { name: "Databases", icon: SiMongodb },
+      { name: "Databases", icon: SiPostgresql },
+      {name: "Next.js", icon: SiNextdotjs}
     ],
   },
 };

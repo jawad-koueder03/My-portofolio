@@ -1,5 +1,6 @@
 import "./About.css";
 import SectionTitle from "../components/SectionTitle";
+import workspaceImage from "../assets/images/pexels-mikhail-nilov-9300738.jpg";
 import { personal } from "../data/personal";
 
 // ===== 3 Feature Points =====
@@ -73,7 +74,7 @@ function About() {
           <div className="about__image-wrapper">
             <div className="about__image-frame">
               <img
-                src="/assets/images/about-image.png"
+                src={workspaceImage}
                 alt={`${personal.name} workspace`}
                 className="about__image"
                 loading="lazy"

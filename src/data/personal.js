@@ -17,21 +17,27 @@ export const personal = {
     "I'm a Front-End Developer who enjoys turning ideas into clean, responsive interfaces. I focus on React, APIs, and user-friendly design — while exploring Full-Stack development.",
 
   // ===== بيانات الاتصال =====
-  email: "your-email@example.com", // ← ضع بريدك الحقيقي لاحقًا
+  email: "jawad.kou.03@gmail.com", // ← ضع بريدك الحقيقي لاحقًا
 
   // ===== روابط التواصل =====
   socials: [
     {
       name: "GitHub",
       icon: "github",
-      url: "https://github.com/yourusername", // ← ضع رابطك
+      url: "https://github.com/jawad-koueder03", // ← ضع رابطك
       label: "Visit my GitHub profile",
     },
     {
       name: "Email",
       icon: "email",
-      url: "mailto:your-email@example.com", // ← ضع بريدك
+      url: "mailto:jawad.kou.03@gmail.com", // ← ضع بريدك
       label: "Send me an email",
+    },
+    {
+      name: "WhatsApp",
+      icon: "whatsapp",
+      url: "https://wa.me/+963992952075", // ← ضع رابطك
+      label: "Chat on WhatsApp",
     },
   ],
 
@@ -40,15 +46,22 @@ export const personal = {
     {
       name: "Email",
       icon: "email",
-      url: "mailto:your-email@example.com",
-      text: "your-email@example.com",
+      url: "mailto:jawad.kou.03@gmail.com",
+      text: "jawad.kou.03@gmail.com",
       label: "Send me an email",
+    },
+    {
+      name: "WhatsApp",
+      icon: "whatsapp",
+      url: "https://wa.me/+963992952075",
+      text: "+963 992 952 075",
+      label: "Chat on WhatsApp",
     },
     {
       name: "GitHub",
       icon: "github",
-      url: "https://github.com/yourusername",
-      text: "github.com/yourusername",
+      url: "https://github.com/jawad-koueder03",
+      text: "github.com/jawad-koueder03",
       label: "Visit my GitHub profile",
     },
   ],

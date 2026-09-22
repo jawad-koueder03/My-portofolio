@@ -1,6 +1,7 @@
 import "./Hero.css";
 import Button from "../components/Button";
 import SocialLinks from "../components/SocialLinks";
+import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { personal } from "../data/personal";
 
 // ===== SVG Icons صغيرة =====
@@ -65,7 +66,9 @@ function Hero() {
               icon={<ArrowIcon />}
               iconPosition="right"
             >
+              
               View My Work
+              
             </Button>
 
             <Button

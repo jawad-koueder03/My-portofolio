@@ -1,10 +1,11 @@
 import "./SocialLinks.css";
-import { SiGithub, SiGmail } from "@icons-pack/react-simple-icons";
+import { SiGithub, SiGmail,SiWhatsapp } from "@icons-pack/react-simple-icons";
 
 // خريطة الأيقونات — تربط اسم الشبكة بالـ Component
 const ICONS = {
   github: SiGithub,
   email: SiGmail,
+  whatsapp: SiWhatsapp,
 };
 
 function SocialLinks({ links, variant = "icons", size = "md", className = "" }) {
