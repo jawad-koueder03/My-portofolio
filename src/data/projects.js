@@ -12,8 +12,8 @@ export const projectsData = [
       "web application that allows the employees to contact each other in the syrian Ministry of Interior  ",
     image: project1,
     technologies: ["React", "CSS", "API","tailwind","web socket"],
-    liveDemo: "#",
-    github: "#",
+    liveDemo: "https://jawad-koueder03.github.io/project-1ForMyCv",
+    github: "https://github.com/jawad-koueder03/project-1ForMyCv",
   },
   {
     id: 2,
@@ -23,8 +23,8 @@ export const projectsData = [
       "an E-commerce website for selling products online , user-friendly interface , also i used React ,tailwind ,react router , and react simple .",
     image: project2,
     technologies: ["React", "Fetch API", "CSS" , "React","tailwind","react router","react simple"],
-    liveDemo: "#",
-    github: "#",
+    liveDemo: "https://jawad-koueder03.github.io/E-commerce/",
+    github: "https://github.com/jawad-koueder03/E-commerce",
   },
   {
     id: 3,
