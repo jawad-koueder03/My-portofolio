@@ -1,7 +1,7 @@
 
 import project1 from "../assets/images/projects/project-1.png";
 import project2 from "../assets/images/projects/project-2.png";
-// import project3 from "../assets/images/projects/dasd.png";
+ import project3 from "../assets/images/projects/project-3.png";
 
 export const projectsData = [
   {
@@ -31,7 +31,7 @@ export const projectsData = [
     title: "on progress project",
     type: "on progress",
     description:" on progress project that i will work on it in the future"
-    ,    image: "",
+    ,    image: project3,
     technologies: [],
     liveDemo: "#",
     github: "#",
