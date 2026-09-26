@@ -1,5 +1,5 @@
 
-import project1 from "../assets/images/projects/dasd.png";
+import project1 from "../assets/images/projects/project-1.png";
 import project2 from "../assets/images/projects/dasd.png";
 import project3 from "../assets/images/projects/dasd.png";
 
@@ -9,9 +9,9 @@ export const projectsData = [
     title: "Project One",
     type: "Web Application",
     description:
-      "Short description of what this project does and what problem it solves. Replace with your real project details later.",
+      "web application that allows the employees to contact each other in the syrian Ministry of Interior  ",
     image: project1,
-    technologies: ["React", "CSS", "API"],
+    technologies: ["React", "CSS", "API","tailwind","web socket"],
     liveDemo: "#",
     github: "#",
   },
@@ -20,9 +20,9 @@ export const projectsData = [
     title: "Project Two",
     type: "E-Commerce",
     description:
-      "Short description of what this project does and what problem it solves. Replace with your real project details later.",
+      "an E-commerce website for selling products online , user-friendly interface , also i used React ,tailwind ,react router , and react simple .",
     image: project2,
-    technologies: ["React", "Fetch API", "CSS"],
+    technologies: ["React", "Fetch API", "CSS" , "React","tailwind","react router","react simple"],
     liveDemo: "#",
     github: "#",
   },
@@ -31,7 +31,7 @@ export const projectsData = [
     title: "Project Three",
     type: "Web Application",
     description:
-      "Short description of what this project does and what problem it solves. Replace with your real project details later.",
+      "an E-commerce website for selling products online , user-friendly interface , also i used React ,tailwind ,react router , and react simple .",
     image: project3,
     technologies: ["HTML", "CSS", "JavaScript"],
     liveDemo: "#",
