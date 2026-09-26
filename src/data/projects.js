@@ -1,7 +1,7 @@
 
 import project1 from "../assets/images/projects/project-1.png";
 import project2 from "../assets/images/projects/project-2.png";
-import project3 from "../assets/images/projects/dasd.png";
+// import project3 from "../assets/images/projects/dasd.png";
 
 export const projectsData = [
   {
@@ -28,12 +28,11 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Project Three",
-    type: "Web Application",
-    description:
-      "an E-commerce website for selling products online , user-friendly interface , also i used React ,tailwind ,react router , and react simple .",
-    image: project3,
-    technologies: ["HTML", "CSS", "JavaScript"],
+    title: "on progress project",
+    type: "on progress",
+    description:" on progress project that i will work on it in the future"
+    ,    image: "",
+    technologies: [],
     liveDemo: "#",
     github: "#",
   },
