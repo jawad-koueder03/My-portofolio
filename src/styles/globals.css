@@ -18,11 +18,11 @@
   --color-text-soft: #475569;
 
   /* ===== الألوان — Accent ===== */
-  --color-primary: #6366f1;
+  --color-primary: #2e76d3;
   --color-primary-hover: #4f46e5;
   --color-primary-soft: rgba(99, 102, 241, 0.08);
-  --color-secondary: #8b5cf6;
-  --color-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --color-secondary: #2205c6;
+  --color-gradient: linear-gradient(135deg, #6366f1 0%, #2205c6 100%);
 
   /* ===== الألوان — Borders ===== */
   --color-border: #e2e8f0;
