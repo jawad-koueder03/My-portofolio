@@ -9,7 +9,7 @@ export const projectsData = [
     title: "Project One",
     type: "Web Application",
     description:
-      "web application that allows the employees to contact each other in the syrian Ministry of Interior  ",
+      "web application that allows the employees to contact each other in the syrian Ministry of Interior and it's work only on pc (not responsive) ",
     image: project1,
     technologies: ["React", "CSS", "API","tailwind","web socket"],
     liveDemo: "https://jawad-koueder03.github.io/project-1ForMyCv",
